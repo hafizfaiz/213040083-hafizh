@@ -1,0 +1,125 @@
+/* navigasi */
+@media screen and (max-width: 658px){
+    nav {
+        padding: 20px;   
+    } 
+    .logo h3 {
+        padding-left: 5px;
+        font-size: 70%;
+    }
+    nav ul li a{
+        padding: 10px;
+        font-size: 70%;
+    }
+}
+/* Header text*/
+@media screen and (max-width: 835px){ 
+    .home-area {
+        height: 93vh;
+    }
+    .about-area {
+        height: 100vh;
+    }
+    .text-home h4 {
+        font-size: 100%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-top: 420px;
+        transition: all 1s;
+    }
+    .text-home h1 {
+        font-size: 200%;
+        text-align: justify;
+    }
+    .text-home  p {
+        font-size: 70%;
+    }
+    .text-home {
+        margin-left: 50px;
+    }
+}
+/* About */
+@media screen and (max-width: 1210px){
+    .text-about h1 {
+        padding-left: 90px;
+        padding-top: 100px;
+        transition: all 1s;
+        font-size: 300%;
+       
+    }
+    .text-about p {
+        max-width: 400px;
+        padding-left: 40px;
+        padding-top: 60px;
+        transition: all 1s;
+    }
+}
+
+/* Contact Form*/
+@media screen and (max-width: 741px) {
+    .bio h4,.bio h1,.bio p {
+
+        margin-left:80px;
+      }
+      .bio h4 {
+        font-size: 150%;
+      }
+      .bio h1 {
+        font-size: 230%;
+      }
+      .bio {
+        margin-top: 180px;
+        max-width: 400px;
+      }
+      .bio .dob, .bio .hobby, .bio .lived{
+        margin-top: 30px;
+      }
+
+}
+/* Contact Form*/
+  
+@media screen and (max-width: 1335px) {
+    .container {
+        transition: all 1s;
+        padding-left: 95px;
+        transition: all 1s;
+    }
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+    .screen-body {
+      padding: 50px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+    
+      .background {
+        padding-top:20vh;
+    }
+    .contact-area  {
+        height: 93vh;
+    }
+    /* skill */
+    .skill_container {
+      width: 80%;
+      margin: 20vh 5vh;
+  }
+}

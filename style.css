@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif; 
+    color: whitesmoke;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #373A40;
+    position: sticky;
+    top: 0;
+    height: 100%;
+}
+.logo h3 {
+    padding-left: 20px;
+    font-size: 120%;
+    color: white;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 120%;
+}
+nav ul li a:hover {
+    background-color: gainsboro;
+}
+.home-area, .bio-area, .about-area, .hobby-area, .contact-area, .skills-area{
+    display: flex;
+    height: 100vh;
+}
+
+/* Home Area*/
+
+.home-area {
+    background-image: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: right;
+}
+.text-home {
+    margin-left: 65px;
+    margin-top: 50px;
+    position: left;
+}
+.text-home a {
+    color: yellow;
+}
+.text-home h4 {
+    font-size: 180%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 200px;
+
+}
+.text-home h1 {
+    font-size: 470%;
+    text-align: justify;
+}
+.text-home .description {
+    padding-top: 15px;
+}
+
+/* About Area*/
+
+.about-area {
+    background-image: url(img/header2.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: right; 
+}
+.text-about h1 {
+    font-family: cursive;
+    font-size: 400%;
+    padding-left: 94vh;
+    padding-top: 20vh;
+    text-align: justify;
+   
+}
+.text-about p {
+    max-width: 600px;
+    font-size: 130%;
+    padding-left: 94vh;
+    padding-top: 50px;
+
+}
+
+
+/* Bio Area */
+
+.bio-area {
+  background-image: url(img/header3.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: left; 
+}
+.bio h4,.bio h1,.bio p {
+  margin-left: 25vh;
+}
+.bio h4 {
+  font-size: 130%;
+}
+.bio h1 {
+  font-size: 230%;
+}
+.bio {
+  margin-top: 30vh;
+
+}
+.bio .dob {
+  margin-top: 20px;
+}
+.bio .hobby {
+  margin-top: 20px;
+}
+.bio .lived {
+  margin-top: 20px;
+}
+
+/* Skills Area*/
+
+.skills-area {
+  background-image: url(img/headerr.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}  
+
+.skill_container {
+    width: 100%;
+    margin: 29vh 30vh;
+}
+.skill_container h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+.bar{
+    background-color: #6e6e6e;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.bar::before{
+    content:  attr(data-skill);
+    background-color: #334257;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+}
+
+.bar.front::before{
+    background-color: #301B3F;
+}
+.bar.back::before{
+    background-color: #476072;
+}
+
+.bar.learning::before{
+    width: calc(80% - 10px);
+}
+.bar.basic::before{
+    width: calc(70% - 10px);
+}
+.bar.intermediate::before{
+    width: calc(10% - 10px);
+}
+.bar.advanced::before{
+    width: calc(30% - 10px);
+}
+.bar.expert::before{
+    width: calc(10% - 10px);
+}
+
+/* Contact Area */
+
+body .contact-area {
+    background-color: #1d1d1d;
+}
+  .background {
+      padding-top: 27vh;
+}
+  
+ .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding-left: 390px;
+}
+  
+.screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+}
+  
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+  
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  
+.screen-header-left {
+    margin-right: auto;
+}
+  
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+  
+.screen-header-button.close {
+    background: #ed1c6f;
+}
+  
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+  
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+  
+.screen-header-right {
+    display: flex;
+}
+  
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+  
+.screen-body {
+    display: flex;
+}
+  
+.screen-body-item {
+    flex: 1;
+    padding: 50px 80px;
+}
+  
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+  
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ea1d6f;
+    font-size: 26px;
+}
+  
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ea1d6f;
+}
+  
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+  
+.app-form-group.message {
+    margin-top: 40px;
+}
+  
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+  
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+}
+  
+.app-form-control::placeholder {
+    color: #666;
+}
+  
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+  
+.app-form-button {
+    background: none;
+    border: none;
+    color: #6D9886;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+  
+.app-form-button:hover {
+    color: #58796b;
+}
+
